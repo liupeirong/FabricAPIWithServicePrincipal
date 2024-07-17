@@ -9,10 +9,6 @@ There are management plane API calls such as creating a KQL database in Fabric,
  and data plane API calls such as creating a table in an existing KQL database or
  query a table.
 
-This sample makes two calls in the management plane, and two in the data plane. It demonstrates that
- at the time of this writing, while Service Principal is not yet supported by all management plane APIs
- in Fabric, it does work with KQL database, same as how it works with Azure Data Explorer.
-
 ## Management plane API
 
 > To make these APIs, grant the Service Principal `Contributor` role to your Fabric
@@ -31,3 +27,10 @@ This sample makes two calls in the management plane, and two in the data plane. 
 
 * A call to create a table in an existing KQL database. - This call should succeed.
 * A call to query an existing table. - This call should succeed.
+
+## Summary
+
+You can see that at the time of this writing, Service Principal is not yet supported by
+ all management plane APIs in Fabric.
+It does work with KQL database at the data plane level, same as how it works with
+ Azure Data Explorer.
